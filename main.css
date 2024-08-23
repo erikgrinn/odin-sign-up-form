@@ -27,9 +27,23 @@ img.big {
     justify-content: center;
     padding: 12px 0;
     opacity: 50%;
+    height: 100px;
     width: 500px;
     z-index: 2;
 }
+
+.right {
+    display: flex;
+    flex-direction: column;
+    background: #ddd;
+    align-items: center;
+    text-align: left;
+    padding: 12px;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
 form {
     display: flex;
     flex-wrap: wrap;
