@@ -36,17 +36,69 @@ img.big {
     display: flex;
     flex-direction: column;
     background: #ddd;
-    align-items: center;
+    /* align-items: center; */
     text-align: left;
-    padding: 12px;
+    /* padding: 0 12px; */
     justify-content: center;
     height: 100vh;
-    width: 100%;
+    /* width: 100%; */
+}
+
+.right .header {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    padding: 0 24px;
+    /* margin-top: 50px; */
+    /* margin-bottom: 20px; */
 }
 
 form {
     display: flex;
+    flex-direction: column;
+    justify-content: left;
     flex-wrap: wrap;
-    padding: 12px;
-    gap: 12px;
+    background-color: rgb(243, 249, 253);
+    padding: 28px 24px;
+    /* gap: 12px; */
+    /* height: 450px; */
+}
+
+.input-group {
+    display: flex;
+    width: 600px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.input-group label {
+    /* display: block; */
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 50px;
+}
+
+.input-half {
+    width: 150px;
+    padding-right: 100px;
+    /* margin-right: 50px; */
+}
+
+.input-half:first-child {
+    margin-right: 20px;
+}
+
+.error-message p {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 20px;
 }
