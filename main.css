@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 0;
+    font-family: "Raleway", sans-serif; 
 }
 
-/* image height to be stretched instead of hard-coded */
 img.big {
     height: 100vh;
     width: 500px;
@@ -13,20 +16,18 @@ img.big {
 .sidebar {
     display: flex;
     flex-direction: column;
-    /* z-index: 1; */
 }
 .overlay {
     display: flex;
     position: absolute;
-    /* left: 8px; */
     top: 100px;
-    background-color: black;
+    background-color: rgb(0, 0, 0, 0.5);
     color: white;
+    font-family: "Cinzel", serif; 
     font-size: 48px;
     align-items: center;
     justify-content: center;
     padding: 12px 0;
-    opacity: 50%;
     height: 100px;
     width: 500px;
     z-index: 2;
@@ -35,33 +36,33 @@ img.big {
 .right {
     display: flex;
     flex-direction: column;
-    background: #ddd;
+    background: #e8e7e7;
     /* align-items: center; */
     text-align: left;
-    /* padding: 0 12px; */
     justify-content: center;
     height: 100vh;
-    /* width: 100%; */
 }
 
 .right .header {
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 24px;
+    margin-bottom: 86px;
     padding: 0 24px;
-    /* margin-top: 50px; */
-    /* margin-bottom: 20px; */
 }
 
-form {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: left;
     flex-wrap: wrap;
-    background-color: rgb(243, 249, 253);
+    background-color: rgb(251, 251, 251);
+    box-shadow:  5px 5px 5px rgb(155, 162, 164);
     padding: 28px 24px;
-    /* gap: 12px; */
-    /* height: 450px; */
+}
+
+h2 {
+    font-family: "Cinzel", serif;
+    margin-bottom: 40px;
 }
 
 .input-group {
@@ -72,33 +73,58 @@ form {
 }
 
 .input-group label {
-    /* display: block; */
     margin-bottom: 5px;
-    font-size: 14px;
-    color: #333;
+    font-size: 18px;
 }
 
 .input-group input {
+    height: 12px;
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #E5E7EB;
     border-radius: 4px;
     font-size: 14px;
     margin-right: 50px;
 }
 
-.input-half {
-    width: 150px;
+input:focus {
+    box-shadow:  2px 2px 2px rgb(155, 162, 164);
+}
+
+.input-half input{
+    width: 200px;
     padding-right: 100px;
-    /* margin-right: 50px; */
+}
+.input-half label {
+    width: 250px;
 }
 
-.input-half:first-child {
-    margin-right: 20px;
+#password:invalid,
+#confirm-password:invalid {
+    border:2px solid red;
 }
 
-.error-message p {
+.error-message {
     color: red;
     font-size: 12px;
-    margin-bottom: 20px;
+}
+
+button {
+    width: 225px;
+    margin: 24px;
+    padding: 12px 24px;
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2f3927;
+}
+
+.login {
+    padding: 0 24px;
 }
