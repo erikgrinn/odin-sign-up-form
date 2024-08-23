@@ -93,28 +93,33 @@ h2 {
     height: 12px;
     /* width: 100%; */
     padding: 10px;
-    border: 1px solid #E5E7EB;
+    border: 2px solid #E5E7EB;
     border-radius: 4px;
     font-size: 14px;
     margin-right: 50px;
 }
 
 input:focus {
+    outline: none;
     border-color: blue;
     box-shadow:  2px 2px 2px rgb(155, 162, 164);
 }
 
 .input-half input{
-    width: 300px;
+    width: 250px;
     /* padding-right: 100px; */
 }
 .input-half label {
     width: 250px;
 }
 
+/* #password.input:valid {
+    border-color: blue;
+} */
+
 #password:invalid,
 #confirm-password:invalid {
-    border:2px solid red;
+    border-color: red;
 }
 
 .error-message {
