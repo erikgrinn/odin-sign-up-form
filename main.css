@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('./files/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body {
     display: flex;
@@ -23,14 +30,21 @@ img.big {
     top: 100px;
     background-color: rgb(0, 0, 0, 0.5);
     color: white;
-    font-family: "Cinzel", serif; 
-    font-size: 48px;
     align-items: center;
+    text-align: center;
     justify-content: center;
     padding: 12px 0;
     height: 100px;
     width: 500px;
     z-index: 2;
+}
+
+/* not centered */
+.logo-text {
+    text-align: center;
+    font-family: 'Norse-Bold'; 
+    font-size: 84px;
+    padding-top: 14px;
 }
 
 .right {
@@ -61,7 +75,6 @@ img.big {
 }
 
 h2 {
-    font-family: "Cinzel", serif;
     margin-bottom: 40px;
 }
 
@@ -79,7 +92,7 @@ h2 {
 
 .input-group input {
     height: 12px;
-    width: 100%;
+    /* width: 100%; */
     padding: 10px;
     border: 1px solid #E5E7EB;
     border-radius: 4px;
@@ -88,12 +101,13 @@ h2 {
 }
 
 input:focus {
+    border-color: blue;
     box-shadow:  2px 2px 2px rgb(155, 162, 164);
 }
 
 .input-half input{
-    width: 200px;
-    padding-right: 100px;
+    width: 300px;
+    /* padding-right: 100px; */
 }
 .input-half label {
     width: 250px;
